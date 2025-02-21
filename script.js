@@ -203,3 +203,21 @@ document.addEventListener('DOMContentLoaded', function() {
         productGrid.innerHTML = allProducts;
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const categoryCards = document.querySelectorAll('.category-card');
+    const productCards = document.querySelectorAll('.product-card');
+
+    categoryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const category = card.getAttribute('data-category');
+            productCards.forEach(product => {
+                if (product.getAttribute('data-category') === category) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    });
+});
