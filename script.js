@@ -207,6 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', () => {
     const categoryCards = document.querySelectorAll('.category-card');
     const productCards = document.querySelectorAll('.product-card');
+    const seeAllButton = document.querySelector('.products .see-all');
 
     categoryCards.forEach(card => {
         card.addEventListener('click', () => {
@@ -218,6 +219,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     product.style.display = 'none';
                 }
             });
+        });
+    });
+
+    seeAllButton.addEventListener('click', () => {
+        productCards.forEach(product => {
+            product.style.display = 'block';
         });
     });
 });
