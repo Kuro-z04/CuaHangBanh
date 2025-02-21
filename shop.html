@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Bakery</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="shop-page">
+        <h1>The Bakery</h1>
+
+        <section class="categories">
+            <div class="section-header">
+                <h2>Categories</h2>
+                <button class="see-all" id="see-all-categories">See All</button>
+            </div>
+            <div class="category-grid">
+                <div class="category-card" data-category="cupcake">
+                    <img src="image/assortedcupcakesmade.jpg" alt="Party Cupcakes">
+                    <h3>Fresh Cupcake</h3>
+                </div>
+                <div class="category-card" data-category="cookies">
+                    <img src="Image/cookies.png" alt="Party Cupcakes">
+                    <h3>Cookies</h3>
+                </div>
+                <div class="category-card" data-category="bread">
+                    <img src="Image/BrownBread.jpg" alt="Pastries">
+                    <h3>Brown Bread</h3>
+                </div>
+                <div class="category-card" data-category="chocolate">
+                    <img src="Image/DarkChocolate.jpg" alt="Brown Bread">
+                    <h3>Dark Chocolate</h3>
+                </div>
+                <div class="category-card" data-category="wheat">
+                    <img src="Image/wheat.jpg" alt="Fresh Cupcakes">
+                    <h3>Wheat</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="section-header">
+                <h2>Products</h2>
+                <button class="see-all" id="see-all-products">See All</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <div class="product-card" data-category="cupcake">
+                    <img src="Image/cupcakeCam.jpg" alt="Fruit Cake">
+                    <h3>Cupcake Cam</h3>
+                    <p>$25</p>
+                </div>
+                <div class="product-card" data-category="cupcake">
+                    <img src="Image/cupcakeOreo.jpg" alt="Fruit Cake">
+                    <h3>Cupcake Oreo</h3>
+                    <p>$25</p>
+                </div>
+                <div class="product-card" data-category="cookies">
+                    <img src="Image/chocolatechip.png" alt="Chocolate Cookie">
+                    <h3>Chocolate chip Cookie</h3>
+                    <p>$15</p>
+                </div>
+                <div class="product-card" data-category="cookies">
+                    <img src="Image/cookiesbodauphong.png" alt="Chocolate Cookie">
+                    <h3>Cookie bơ đậu phộng</h3>
+                    <p>$15</p>
+                </div>
+                <div class="product-card" data-category="bread">
+                    <img src="Image/Cornbread.jpg" alt="Brown Bread">
+                    <h3>Corn Bread</h3>
+                    <p>$10</p>
+                </div>
+                <div class="product-card" data-category="bread">
+                    <img src="Image/ChallahBread.jpg" alt="Brown Bread">
+                    <h3>Challah Bread</h3>
+                    <p>$10</p>
+                </div>
+                <div class="product-card" data-category="chocolate">
+                    <img src="Image/MarouChocalate.jpg" alt="Dark Chocolate">
+                    <h3>Marou Chocalate</h3>
+                    <p>$20</p>
+                </div>
+                <div class="product-card" data-category="chocolate">
+                    <img src="Image/DarkFigoChocolate.jpg" alt="Dark Chocolate">
+                    <h3>Dark Figo Chocolate</h3>
+                    <p>$20</p>
+                </div>
+                <div class="product-card" data-category="wheat">
+                    <img src="Image/Pastryflour.jpg" alt="Wheat Bread">
+                    <h3>Pastry Flour</h3>
+                    <p>$12</p>
+                </div>
+                <div class="product-card" data-category="wheat">
+                    <img src="Image/SelfRisingFlour.jpg" alt="Wheat Bread">
+                    <h3>Self - Rising Flour</h3>
+                    <p>$12</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
