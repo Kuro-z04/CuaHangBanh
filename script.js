@@ -1,4 +1,3 @@
-// Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
@@ -7,7 +6,6 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -157,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
-    setInterval(nextSlide, 5000); // Tự động chuyển đổi hình ảnh sau mỗi 5 giây
+    setInterval(nextSlide, 5000);
 
     buyNowBtn.addEventListener('click', function() {
         const category = heroImage.getAttribute('data-category');
@@ -169,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     prevBtn.addEventListener('click', prevProduct);
     nextBtn.addEventListener('click', nextProduct);
 
-    setInterval(nextProduct, 5000); // Tự động chuyển đổi sản phẩm sau mỗi 5 giây
+    setInterval(nextProduct, 5000);
 
     buyNowBtn.addEventListener('click', function() {
         const category = heroImage.getAttribute('data-category');
@@ -182,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const productGrid = document.getElementById('product-grid');
     const allProducts = productGrid.innerHTML;
 
-    // Lưu trữ các sản phẩm ban đầu trong một đối tượng
     const productsByCategory = {};
     document.querySelectorAll('.product-card').forEach(product => {
         const category = product.getAttribute('data-category');
@@ -228,3 +225,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function toggleContent() {
+    const content = document.getElementById('about-content');
+    const button = document.querySelector('.btn');
+    
+    if (content.classList.contains('collapsed')) {
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        button.textContent = 'Read Less';
+    } else {
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        button.textContent = 'Read More';
+    }
+}
