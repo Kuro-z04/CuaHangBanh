@@ -9,7 +9,10 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styles */
+h1 {
+    text-align: center;
+}
+
 header {
     background-color: #D8B4BC;
     padding: 1rem 2rem;
@@ -68,7 +71,6 @@ nav a.active {
     transition: 0.3s;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 600px;
@@ -79,17 +81,18 @@ nav a.active {
 }
 
 .hero-content {
-    flex: 1;
+    flex: 1rem;
     padding: 2rem;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    margin-left: -35rem;
 }
 
 .hero h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 2rem;
 }
@@ -103,9 +106,9 @@ nav a.active {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    max-width: 500px; /* Set your desired max width */
-    max-height: 300px; /* Set your desired max height */
-    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    max-width: 500px; 
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .btn {
@@ -113,7 +116,8 @@ nav a.active {
     color: white;
     border: none;
     padding: 0.8rem 2rem;
-    font-size: 1rem;
+    width: 15%;
+    margin: 0; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -143,7 +147,6 @@ nav a.active {
     right: 20px;
 }
 
-/* Shop Page Styles */
 .shop-page {
     padding: 2rem;
 }
@@ -156,7 +159,7 @@ nav a.active {
 }
 
 .see-all {
-    color: #D8B4BC;
+    color: hsl(0, 0%, 0%);
     background: none;
     border: none;
     cursor: pointer;
@@ -175,6 +178,7 @@ nav a.active {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .category-card img {
@@ -196,6 +200,7 @@ nav a.active {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -215,7 +220,6 @@ nav a.active {
     font-weight: bold;
 }
 
-/* About Page Styles */
 .about-page {
     padding: 2rem;
 }
@@ -277,7 +281,6 @@ footer {
     font-size: 1.5rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -325,4 +328,30 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
     }
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
+
+.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.expanded {
+    display: block;
+}
+
+.image-frame {
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: inline-block;
+    background-color: #fff;
 }
